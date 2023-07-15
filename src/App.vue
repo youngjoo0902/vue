@@ -1,8 +1,10 @@
 <template>
-  <HeaderPage :isHeaderOpened="isHeaderOpened" />
+<div>
+  <HeaderPage @headerEmit="headerEmitToggle" />
 
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="css는 대충 만들어놨음" />
+  </div>
 </template>
 
 <script>
@@ -19,10 +21,12 @@ export default {
   },
   data(){
     return {
-      isHeaderOpened : false
     }
   },
   methods : {
+    headerEmitToggle(){
+      console.log(111);
+    }
   }
 }
 </script>
