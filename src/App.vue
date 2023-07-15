@@ -1,15 +1,28 @@
 <template>
+  <HeaderPage :isHeaderOpened="isHeaderOpened" />
+
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="css는 대충 만들어놨음" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import './assets/css/common.css'
+
+import HelloWorld from './components/HelloWorld'
+import HeaderPage from './views/layout/HeaderPage'
 
 export default {
   name: 'App',
   components: {
+    HeaderPage,
     HelloWorld
+  },
+  data(){
+    return {
+      isHeaderOpened : false
+    }
+  },
+  methods : {
   }
 }
 </script>
@@ -21,6 +34,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

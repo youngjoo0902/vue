@@ -1,0 +1,13 @@
+body{margin:0;}
+#app    {background:#cfa;}
+#app.on {background:#fce;}
+#header {background:#ace; padding:10px 0;}
+
+#gnb ul {text-align:center; list-style:none;}
+#gnb ul li {display:inline-block;}
+#gnb ul li a  {display:block; padding:5px; border:1px solid #ccc; margin:0 5px; text-decoration:none; background:#000; color:#fff;}
+#gnb ul li.on a {background:#f0d;}
+
+.hello  {text-align:left;}
+.hello h1{font-size:20px;}
+.hello .code    {color:#00f;}
